@@ -1,0 +1,81 @@
+
+/* Class = "IBUIButton"; normalTitle = "Create Schedule"; ObjectID = "6RO-N5-3x7"; */
+"6RO-N5-3x7.normalTitle" = "Create Schedule";
+
+/* Class = "IBUILabel"; text = "A of the Day"; ObjectID = "6cN-ym-Vaw"; */
+"6cN-ym-Vaw.text" = "A of the Day";
+
+/* Class = "IBUILabel"; text = "Customize Schedule"; ObjectID = "7dg-qN-uOG"; */
+"7dg-qN-uOG.text" = "Customize Schedule";
+
+/* Class = "IBUITabBarController"; title = "Tab View Controller"; ObjectID = "8YX-ce-x5E"; */
+"8YX-ce-x5E.title" = "Tab View Controller";
+
+/* Class = "IBUILabel"; text = "Next Day"; ObjectID = "Hmk-zc-6q1"; */
+"Hmk-zc-6q1.text" = "Next Day";
+
+/* Class = "IBUISegmentedControl"; Nic-Dt-KXA.segmentTitles[0] = "STA"; ObjectID = "Nic-Dt-KXA"; */
+"Nic-Dt-KXA.segmentTitles[0]" = "STA";
+
+/* Class = "IBUISegmentedControl"; Nic-Dt-KXA.segmentTitles[1] = "NCS"; ObjectID = "Nic-Dt-KXA"; */
+"Nic-Dt-KXA.segmentTitles[1]" = "NCS";
+
+/* Class = "IBUILabel"; text = "Do You Work Now Bitch?"; ObjectID = "O5z-6h-a0B"; */
+"O5z-6h-a0B.text" = "Do You Work Now Bitch?";
+
+/* Class = "IBUILabel"; text = "Next Day"; ObjectID = "ZLL-6a-Qgm"; */
+"ZLL-6a-Qgm.text" = "Next Day";
+
+/* Class = "IBUITabBarItem"; title = "7 Day"; ObjectID = "Zbw-OZ-2W5"; */
+"Zbw-OZ-2W5.title" = "7 Day";
+
+/* Class = "IBUITextField"; placeholder = "Period 2"; ObjectID = "ZyC-EQ-AC3"; */
+"ZyC-EQ-AC3.placeholder" = "Period 2";
+
+/* Class = "IBUITextField"; placeholder = "Period 6"; ObjectID = "b2W-iN-wSB"; */
+"b2W-iN-wSB.placeholder" = "Period 6";
+
+/* Class = "IBUITabBarItem"; title = "Test"; ObjectID = "b7f-PZ-ZQj"; */
+"b7f-PZ-ZQj.title" = "Test";
+
+/* Class = "IBUILabel"; text = "Next Day"; ObjectID = "bfK-4b-UZl"; */
+"bfK-4b-UZl.text" = "Next Day";
+
+/* Class = "IBUILabel"; text = "Day A"; ObjectID = "cNw-gv-wyr"; */
+"cNw-gv-wyr.text" = "Day A";
+
+/* Class = "IBUIViewController"; title = "Login View Controller"; ObjectID = "dDE-bh-cRd"; */
+"dDE-bh-cRd.title" = "Login View Controller";
+
+/* Class = "IBUITextField"; placeholder = "Period 4"; ObjectID = "hy8-jb-aLN"; */
+"hy8-jb-aLN.placeholder" = "Period 4";
+
+/* Class = "IBUISegmentedControl"; ijy-lD-TRK.segmentTitles[0] = "III"; ObjectID = "ijy-lD-TRK"; */
+"ijy-lD-TRK.segmentTitles[0]" = "III";
+
+/* Class = "IBUISegmentedControl"; ijy-lD-TRK.segmentTitles[1] = "IV"; ObjectID = "ijy-lD-TRK"; */
+"ijy-lD-TRK.segmentTitles[1]" = "IV";
+
+/* Class = "IBUISegmentedControl"; ijy-lD-TRK.segmentTitles[2] = "V"; ObjectID = "ijy-lD-TRK"; */
+"ijy-lD-TRK.segmentTitles[2]" = "V";
+
+/* Class = "IBUISegmentedControl"; ijy-lD-TRK.segmentTitles[3] = "VI"; ObjectID = "ijy-lD-TRK"; */
+"ijy-lD-TRK.segmentTitles[3]" = "VI";
+
+/* Class = "IBUITextField"; placeholder = "Period 5"; ObjectID = "iwi-jc-Dwm"; */
+"iwi-jc-Dwm.placeholder" = "Period 5";
+
+/* Class = "IBUITextField"; placeholder = "Full Name"; ObjectID = "phm-UN-sFi"; */
+"phm-UN-sFi.placeholder" = "Full Name";
+
+/* Class = "IBUITextField"; placeholder = "Period 1"; ObjectID = "vho-3Q-mRt"; */
+"vho-3Q-mRt.placeholder" = "Period 1";
+
+/* Class = "IBUITextField"; placeholder = "Period 3"; ObjectID = "wwH-Ga-V1R"; */
+"wwH-Ga-V1R.placeholder" = "Period 3";
+
+/* Class = "IBUILabel"; text = "Next Day"; ObjectID = "y1X-pA-SQO"; */
+"y1X-pA-SQO.text" = "Next Day";
+
+/* Class = "IBUILabel"; text = "Fuck this world"; ObjectID = "yDy-Ep-cWN"; */
+"yDy-Ep-cWN.text" = "Fuck this world";

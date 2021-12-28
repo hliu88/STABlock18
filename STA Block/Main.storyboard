@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="oZM-XS-3NG">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--7 Day View Controller-->
+        <scene sceneID="6Bc-Ph-dPG">
+            <objects>
+                <viewController title="7 Day View Controller" id="LiK-re-9fO" customClass="PageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M2G-yI-NEB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="7 Day" image="first" id="b7f-PZ-ZQj"/>
+                    <connections>
+                        <segue destination="Dub-bd-a9y" kind="modal" identifier="refreshSchedule" animates="NO" id="FGg-M5-8lP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ueA-wA-cY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="660" y="-129"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="obm-fk-UJj">
+            <objects>
+                <tabBarController storyboardIdentifier="tabStoryboard" id="Dub-bd-a9y" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ioc-mf-cJ4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LiK-re-9fO" kind="relationship" relationship="viewControllers" id="yjp-ej-Btm"/>
+                        <segue destination="qmz-md-Yym" kind="relationship" relationship="viewControllers" id="Ljb-qq-2RJ"/>
+                        <segue destination="yC0-wH-UO6" kind="relationship" relationship="viewControllers" id="wRk-7j-O1f"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9vm-EK-1OM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105" y="166"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="OKQ-Gz-uP0">
+            <objects>
+                <viewController id="yC0-wH-UO6" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fPO-db-2ci" customClass="UIScrollView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fQn-an-Mfe">
+                                <rect key="frame" x="60" y="20" width="200" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settingsSpacer.png" id="Dua-X6-gMm">
+                                <rect key="frame" x="6" y="142" width="308" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="svU-px-Qfe" userLabel="FuzzyView">
+                                <rect key="frame" x="10" y="146" width="300" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wak-CG-Wha">
+                                        <rect key="frame" x="85" y="5" width="130" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Add Schedule">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addSchedule" destination="yC0-wH-UO6" eventType="touchUpInside" id="F9D-aV-EFC"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Schedule:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EfB-xd-BYs">
+                                        <rect key="frame" x="80" y="47" width="140" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloud Schedule:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cB6-eD-RgZ">
+                                <rect key="frame" x="60" y="426" width="143" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="nxy-qt-SXG">
+                                <rect key="frame" x="211" y="421" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchValueChanged:" destination="yC0-wH-UO6" eventType="valueChanged" id="UHP-DR-AMC"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lTS-9g-IGf">
+                                <rect key="frame" x="87" y="456" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="More Info">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="whatIsCloudSchedulePressed" destination="yC0-wH-UO6" eventType="touchUpInside" id="Pej-nK-cj2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="third" id="W7B-ko-NbS"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addScheduleButton" destination="wak-CG-Wha" id="Iuq-Gc-3tY"/>
+                        <outlet property="cloudScheduleButton" destination="cB6-eD-RgZ" id="ZPj-Xq-mFj"/>
+                        <outlet property="cloudScheduleSwitch" destination="nxy-qt-SXG" id="G1h-nV-rNx"/>
+                        <outlet property="fuzzyView" destination="svU-px-Qfe" id="8Jw-qe-yQp"/>
+                        <outlet property="scrollView" destination="fPO-db-2ci" id="2Kd-Ih-iMP"/>
+                        <outlet property="settingsLabel" destination="fQn-an-Mfe" id="cfs-6X-vcQ"/>
+                        <outlet property="viewScheduleLabel" destination="EfB-xd-BYs" id="0qY-gp-mLj"/>
+                        <outlet property="whatIsCloudScheduleButton" destination="lTS-9g-IGf" id="7uj-4h-Prl"/>
+                        <segue destination="dDE-bh-cRd" kind="modal" identifier="editSchedule" id="oId-ZS-SB4"/>
+                        <segue destination="Dub-bd-a9y" kind="modal" identifier="refreshPage" animates="NO" id="D7C-7B-Nr4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dot-DX-lBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105" y="943"/>
+        </scene>
+        <!--Long Term View Vontroller-->
+        <scene sceneID="1BO-hn-SqJ">
+            <objects>
+                <viewController title="Long Term View Vontroller" id="qmz-md-Yym" customClass="LTPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="61f-vG-tQe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Long-term" image="second" id="orQ-zl-pPt"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ar0-I3-IOT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="660" y="572"/>
+        </scene>
+        <!--LT Page View Controller-->
+        <scene sceneID="l47-Jz-0DU">
+            <objects>
+                <pageViewController storyboardIdentifier="ltPageViewController" autoresizesArchivedViewToFullSize="NO" title="LT Page View Controller" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="oZM-XS-3NG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fvl-o5-fAS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1101" y="572"/>
+        </scene>
+        <!--LT Content View Controller-->
+        <scene sceneID="4hB-Of-Kyo">
+            <objects>
+                <viewController storyboardIdentifier="ltPageContentViewController" title="LT Content View Controller" id="jOj-H5-PCv" customClass="LongTermViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fmI-Sh-H4N" customClass="UIScrollView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2KA-g9-kz5">
+                                <rect key="frame" x="5" y="10" width="310" height="505"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="calendarImageView" destination="2KA-g9-kz5" id="LrB-DV-QNa"/>
+                        <outlet property="scrollView" destination="fmI-Sh-H4N" id="J0c-Rz-0aI"/>
+                        <segue destination="X6l-EN-qdS" kind="modal" identifier="showDay" id="hIe-HK-i4C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GPW-fJ-dXc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1488" y="572"/>
+        </scene>
+        <!--Day Image View Controller-->
+        <scene sceneID="Ut6-M6-UyC">
+            <objects>
+                <viewController storyboardIdentifier="DayImageViewController" title="Day Image View Controller" id="X6l-EN-qdS" customClass="DayImageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z4U-hS-RF8" customClass="UIScrollView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="OkF-jm-e7Q">
+                                <rect key="frame" x="70" y="64" width="180" height="440"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YrO-HS-dcO">
+                                <rect key="frame" x="105" y="502" width="110" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBack" destination="X6l-EN-qdS" eventType="touchUpInside" id="2bA-DD-AUa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PNv-Ns-M5W">
+                                <rect key="frame" x="90" y="24" width="140" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="dayOfImage" destination="PNv-Ns-M5W" id="tMv-zt-x3n"/>
+                        <outlet property="goBackButton" destination="YrO-HS-dcO" id="a9r-Za-O7j"/>
+                        <outlet property="scheduleImageView" destination="OkF-jm-e7Q" id="7Vm-2r-1oJ"/>
+                        <outlet property="scrollView" destination="Z4U-hS-RF8" id="yVa-dO-ikp"/>
+                        <segue destination="Dub-bd-a9y" kind="modal" identifier="returnFromDayImage" id="GMk-0h-kwZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lJI-zb-d8T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1952" y="572"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="MhA-kM-zdO">
+            <objects>
+                <pageViewController storyboardIdentifier="pageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="SQ3-1z-qfB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NaF-AD-KM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1101" y="-129"/>
+        </scene>
+        <!--Page Content View Controller-->
+        <scene sceneID="gIN-LN-GKM">
+            <objects>
+                <viewController storyboardIdentifier="pageContentViewController" id="GeV-0d-0FZ" customClass="PageContentViewController" sceneMemberID="viewController">
+                    <scrollView key="view" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" id="N6c-9y-ttP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="kzJ-8c-jbs">
+                                <rect key="frame" x="70" y="64" width="180" height="440"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="lxg-ql-USr">
+                                <rect key="frame" x="0.0" y="26" width="320" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DoW" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aPT-uw-hYm">
+                                <rect key="frame" x="0.0" y="35" width="110" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="isA-AN-wby">
+                                <rect key="frame" x="128" y="20" width="64" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fvo-tD-M9V">
+                                <rect key="frame" x="210" y="35" width="110" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </scrollView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="fvo-tD-M9V" id="HWI-5y-Ozg"/>
+                        <outlet property="dayLabel" destination="isA-AN-wby" id="oDW-ve-boL"/>
+                        <outlet property="dowLabel" destination="aPT-uw-hYm" id="wLz-TZ-49h"/>
+                        <outlet property="lineSpacerView" destination="lxg-ql-USr" id="DcV-Qf-hHR"/>
+                        <outlet property="scheduleImageView" destination="kzJ-8c-jbs" id="FgD-yu-cDJ"/>
+                        <outlet property="scrollView" destination="N6c-9y-ttP" id="MVe-KH-GZW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZoG-Be-NOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1488" y="-129"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="ch3-zp-KBv">
+            <objects>
+                <viewController storyboardIdentifier="loginStoryboard" title="Login View Controller" id="dDE-bh-cRd" customClass="LoginViewController" sceneMemberID="viewController">
+                    <scrollView key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" keyboardDismissMode="onDrag" id="wRf-AL-AWL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ensemble:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yJ5-5U-lmK">
+                                <rect key="frame" x="165" y="91" width="76" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" id="Nic-Dt-KXA">
+                                <rect key="frame" x="18" y="91" width="137" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="STA"/>
+                                    <segment title="NCS"/>
+                                </segments>
+                                <connections>
+                                    <action selector="schoolSelected" destination="dDE-bh-cRd" eventType="valueChanged" id="e0T-uU-3dO"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" id="ijy-lD-TRK">
+                                <rect key="frame" x="243" y="91" width="60" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Y"/>
+                                    <segment title="N"/>
+                                </segments>
+                                <connections>
+                                    <action selector="ensembleSelected" destination="dDE-bh-cRd" eventType="valueChanged" id="VJx-md-j4S"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Period 1" minimumFontSize="17" id="vho-3Q-mRt">
+                                <rect key="frame" x="18" y="127" width="137" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Period 2" minimumFontSize="17" id="ZyC-EQ-AC3">
+                                <rect key="frame" x="18" y="165" width="137" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Period 3" minimumFontSize="17" id="wwH-Ga-V1R">
+                                <rect key="frame" x="18" y="203" width="137" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Period 4" minimumFontSize="17" id="hy8-jb-aLN">
+                                <rect key="frame" x="165" y="127" width="138" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Period 5" minimumFontSize="17" id="iwi-jc-Dwm">
+                                <rect key="frame" x="165" y="165" width="138" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Period 6" minimumFontSize="17" id="b2W-iN-wSB">
+                                <rect key="frame" x="165" y="203" width="138" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customize Schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7dg-qN-uOG">
+                                <rect key="frame" x="18" y="20" width="285" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </scrollView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="ensembleLabel" destination="yJ5-5U-lmK" id="Ha0-oR-gqa"/>
+                        <outlet property="ensembleSelector" destination="ijy-lD-TRK" id="ZyB-if-2GN"/>
+                        <outlet property="pageTitleLabel" destination="7dg-qN-uOG" id="kab-kh-r6g"/>
+                        <outlet property="period1Field" destination="vho-3Q-mRt" id="9V6-6c-BV8"/>
+                        <outlet property="period2Field" destination="ZyC-EQ-AC3" id="Wxr-YY-ffh"/>
+                        <outlet property="period3Field" destination="wwH-Ga-V1R" id="kA9-IC-Ivr"/>
+                        <outlet property="period4Field" destination="hy8-jb-aLN" id="XSJ-lr-QQX"/>
+                        <outlet property="period5Field" destination="iwi-jc-Dwm" id="ekm-fK-bqz"/>
+                        <outlet property="period6Field" destination="b2W-iN-wSB" id="CQh-Ox-ikc"/>
+                        <outlet property="schoolSelector" destination="Nic-Dt-KXA" id="GrP-mr-fDR"/>
+                        <outlet property="scrollView" destination="wRf-AL-AWL" id="Q8D-qz-0mN"/>
+                        <segue destination="Ds4-yA-859" kind="modal" identifier="enterAnimation" animates="NO" id="SGD-Xn-sBD"/>
+                        <segue destination="Dub-bd-a9y" kind="modal" identifier="cancelEdit" id="jpU-sI-oDf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nx8-wM-Pgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-847" y="166"/>
+        </scene>
+        <!--Loading Animation View Controller-->
+        <scene sceneID="gAQ-0m-ZjE">
+            <objects>
+                <viewController id="Ds4-yA-859" customClass="LoadingAnimationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p6G-ig-Jga" customClass="UIScrollView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="cnU-UN-nRu">
+                                <rect key="frame" x="50" y="64" width="220" height="484"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1na-z6-kGv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="loadingAnimationView" destination="1na-z6-kGv" id="Ui7-Zb-cPW"/>
+                        <outlet property="ncsView" destination="cnU-UN-nRu" id="llF-o1-Aik"/>
+                        <outlet property="scrollView" destination="p6G-ig-Jga" id="MO8-A9-zNp"/>
+                        <segue destination="Dub-bd-a9y" kind="modal" identifier="exitAnimation" animates="NO" id="f4E-7r-KJ5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GV6-el-Lsb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-364" y="572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="20"/>
+        <image name="second" width="25" height="22"/>
+        <image name="settingsSpacer.png" width="308" height="220"/>
+        <image name="third" width="25" height="25"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="D7C-7B-Nr4"/>
+    </inferredMetricsTieBreakers>
+</document>

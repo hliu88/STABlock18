@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "STA Block": {
+            "applicationId": "E2fcuHjMvDFx6Ug06t9AQn9AaHeowyiXV8z7urqZ", 
+            "masterKey": "ULaWpHKSZnF2IRRwXPkrSIX8t0S0LDn6HBRVygfx"
+        }, 
+        "_default": {
+            "link": "STA Block"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.19"
+    }
+}
